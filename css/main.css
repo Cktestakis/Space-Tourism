@@ -1,0 +1,26 @@
+/* BASE */
+
+@import "./base/reset.css";
+@import "./base/color.css";
+@import "./base/typography.css";
+
+/* LAYOUT */
+@import "./layout/navigation.css";
+
+/* PAGES */
+@import "./pages/home.css";
+@import "./pages/destination";
+@import "./pages/destination";
+@import "./pages/crew.css";
+@import "./pages/technology.css";
+
+/* UTILS */
+@import "./utils/variables.css";
+@import "./utils/utilities.css";
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
