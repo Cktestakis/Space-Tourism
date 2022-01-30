@@ -1,0 +1,164 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 55px;
+  height: 96px;
+}
+
+.nav-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.nav-line {
+  width: 100%;
+  max-width: 900px;
+  border-bottom: 1px solid var(--cloud);
+  transform: translateX(10%);
+  z-index: 9999;
+}
+
+.nav-side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 254px;
+  height: 100vh;
+  display: none;
+  background: var(--light-blurred);
+  backdrop-filter: blur(81.5485px);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.nav-list {
+  display: flex;
+  gap: 48px;
+  padding: 0 165px 0 123px;
+  max-width: 830px;
+  height: 100%;
+  background: var(--light-blurred);
+  backdrop-filter: blur(81.5485px);
+}
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.nav-close {
+  position: absolute;
+  top: 33.95px;
+  right: 20px;
+  background: none;
+  border: none;
+}
+
+.nav-closed {
+  transform: translateX(300px);
+}
+
+.nav-side-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 32px;
+  transform: translateY(118px);
+}
+
+.nav-list-item {
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.nav-list-item:hover:not(.active) {
+  border-bottom-color: var(--light-transparent);
+}
+
+.nav-side-link {
+  font-size: 16px;
+}
+
+.nav-side-link,
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: var(--light);
+}
+
+.nav-side-link span,
+.nav-link span {
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.active {
+  border-bottom-color: var(--light);
+}
+
+.side-active {
+  border-right: solid 4px var(--light);
+}
+
+@media only screen and (max-width: 1440px) {
+  .nav-line {
+    max-width: 473px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    margin-top: 0;
+    margin-left: 39px;
+  }
+
+  .nav-line {
+    display: none;
+  }
+
+  .nav-list {
+    gap: 37px;
+    max-width: 450px;
+    padding: 0 46px 0 48px;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-container {
+    margin: 0 24px;
+  }
+
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list-item:hover {
+    border-bottom: none;
+  }
+
+  .nav-hamburger {
+    display: inline-block;
+  }
+
+  .nav-side {
+    display: inline-block;
+  }
+
+  .nav-side-link {
+    height: 31px;
+  }
+}
