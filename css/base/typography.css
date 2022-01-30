@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+:root {
+  --font-primary: "Barlow Condensed", sans-serif;
+  --font-secondary: "Bellefair", serif;
+
+  /* BASE VALUES */
+  --text-size-base: 20px;
+
+  /* Type Scale */
+  --text-xxxl: 150px;
+  --text-xxl: 100px;
+  --text-xl: 56px;
+  --text-lg: 32px;
+  --text-md: 28px;
+  --text-sm: 28px;
+  --text-xs: 14px;
+  --text-nav: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-size-base);
+  color: var(--light);
+}
+
+.text-xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-secondary);
+}
+
+h1,
+.text-xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h2,
+.text-xxxl {
+  font-size: var(--text-xxl);
+}
+
+h3,
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+h4,
+.text-lg {
+  font-size: var(--text-md);
+}
+
+h5,
+.text-md {
+  font-size: var(--text-md);
+  letter-spacing: 4.75;
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+  letter-spacing: 2.7;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    /* Base Values here */
+    --text-size-base: 18px;
+
+    /* Type Scale Here */
+    --text-xxl: 80px;
+    --text-xl: 40px;
+    --text-lg: 24px;
+    --text-md: 20px;
+    --text-nav: 14px;
+  }
+
+  h5,
+  .text-md {
+    letter-spacing: 3.38px;
+  }
+
+  .text-nav {
+    letter-spacing: 2.36px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  :root {
+    /* Base Values here */
+    --text-size-base: 13px;
+
+    /* Type Scale Here */
+    --text-xxl: 80px;
+    --text-xl: 56px;
+    --text-lg: 24px;
+    --text-md: 16px;
+    --text-nav: 16px;
+  }
+}
