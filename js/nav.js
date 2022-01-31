@@ -3,7 +3,7 @@ const navClose = document.querySelector("#navClose");
 const navSide = document.querySelector("#navSide");
 
 navHamburger.addEventListener("click", () => {
-  navSlide.classList.toggle("nav-closed");
+  navSide.classList.toggle("nav-closed");
 });
 
 navClose.addEventListener("click", () => {
