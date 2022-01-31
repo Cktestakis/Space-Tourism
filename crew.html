@@ -54,12 +54,7 @@
 
         <div id="navSide" class="nav-side nav-closed">
             <button id="navClose" class="nav-Close">
-                <img
-                src="./assets/shared/icon-close.svg"
-                alt="Close"
-                width="19"
-                height="19"
-                />
+                <img src="./assets/shared/icon-close.svg" alt="Close" width="19" height="19" />
             </button>
 
             <ul class="nav-side-list">
@@ -87,6 +82,43 @@
         </div>
     </nav>
     <!-- END of NAV BAR -->
+    <main id="crewContent">
+        <h5 class="crew-title uppercase"><span>02</span>Meet your crew</h5>
+
+        <div class="crew-info">
+            <h4 id="crewRole" class="uppdercase">Commander</h4>
+            <h3 id="crewName" class="uppercase">Douglas Hurley</h3>
+
+            <p id="crewBio" class="text-moon">
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
+                launced into space for the third time as commander of Crew Dragon Demo-2.
+            </p>
+        </div>
+        <!-- CREW IMAGE -->
+        <div class="crew-image-container">
+            <img id="crewImage" src="./assets/crew/image-douglas-hurley.png" alt="Crew" />
+        </div>
+
+        <!-- CREW NAV DOTS -->
+        <div class="crew-nav">
+            <ul class="crew-nav-list">
+                <li class="crew-nav-list-item crew-active" data-crew="Douglas Hurley">
+                    <a class="crew-nav-dot" href="#Douglas"></a>
+                </li>
+                <li class="crew-nav-list-item" data-crew="Mark Shuttleworth">
+                    <a class="crew-nav-dot" href="#Mark"></a>
+                </li>
+                <li class="crew-nav-list-item" data-crew="Victor Glover">
+                    <a class="crew-nav-dot" href="#Victor"></a>
+                </li>
+                <li class="crew-nav-list-item" data-crew="Anousheh Ansari">
+                    <a class="crew-nav-dot" href="#Anousheh"></a>
+                </li>
+            </ul>
+        </div>
+
+
+    </main>
 </body>
 
 </html>
