@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- JavaScript -->
+    <script src="./js/destination.js" defer></script>
+    <script src="./js/nav.js" defer></script>
+
+    <title>Destination | Space tourism website</title>
+</head>
+
+<body class="bg-destination">
+    <!-- Navigation bar -->
+    <nav class="nav-container">
+        <a href="index.html">
+            <img class="nav-logo" src="./assets/shared/logo.svg" alt="Space Tourism Logo" />
+        </a>
+
+        <div class="nav-line"></div>
+
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="index.html" class="nav-link text-nav uppercase">
+                    <span>00</span> Home
+                </a>
+            </li>
+            <li class="nav-list-item active">
+                <a href="destination.html" class="nav-link text-nav uppercase">
+                    <span>01</span> Destination
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="crew.html" class="nav-link text-nav uppercase">
+                    <span>02</span> Crew
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="technology.html" class="nav-link text-nav uppercase">
+                    <span>03</span> Technology
+                </a>
+            </li>
+        </ul>
+
+        <button id="navHamburger" class="nav-hamburger">
+            <img src="./assets/shared/icon-hamburger.svg" alt="Close" width="24" height="21" />
+        </button>
+
+        <div id="navSide" class="nav-side nav-closed">
+            <button id="navClose" class="nav-close">
+                <img src="./assets/shared/icon-close.svg" alt="Close" width="19" height="19" />
+            </button>
+
+            <ul class="nav-side-list">
+                <li class="nav-list-item">
+                    <a href="index.html" class="nav-side-link text-nav uppercase">
+                        <span>00</span> Home
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="destination.html" class="nav-side-link text-nav uppercase side-active">
+                        <span>01</span> Destination
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="crew.html" class="nav-side-link text-nav uppercase">
+                        <span>02</span> Crew
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="technology.html" class="nav-side-link text-nav uppercase">
+                        <span>03</span> Technology
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navigation bar -->
+
+    <!-- Main content -->
+    <main id="destinationContent">
+        <h5 class="destination-title uppercase">
+            <span>01</span> Pick your destination
+        </h5>
+
+        <!-- Destination image -->
+        <img id="destinationImage" src="./assets/destination/image-moon.png" alt="Destination" />
+
+        <!-- Destination info -->
+        <div class="destination-info">
+            <!-- Navigation tabs -->
+            <div class="destination-nav">
+                <ul class="destination-nav-list">
+                    <li class="destination-nav-list-item destination-active" data-destination="Moon">
+                        <a class="destination-nav-link text-nav uppercase" href="#Moon">
+                            Moon
+                        </a>
+                    </li>
+                    <li class="destination-nav-list-item" data-destination="Mars">
+                        <a class="destination-nav-link text-nav uppercase" href="#Mars">
+                            Mars
+                        </a>
+                    </li>
+                    <li class="destination-nav-list-item" data-destination="Europa">
+                        <a class="destination-nav-link text-nav uppercase" href="#Europa">
+                            Europa
+                        </a>
+                    </li>
+                    <li class="destination-nav-list-item" data-destination="Titan">
+                        <a class="destination-nav-link text-nav uppercase" href="#Titan">
+                            Titan
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End navigation tabs -->
+
+            <h2 id="destinationName" class="uppercase">Moon</h2>
+
+            <p id="destinationDescription" class="text-moon">
+                See our planet as you’ve never seen it before. A perfect relaxing trip
+                away to help regain perspective and come back refreshed. While you’re
+                there, take in some history by visiting the Luna 2 and Apollo 11
+                landing sites.
+            </p>
+
+            <div class="divider"></div>
+
+            <!-- Destination details -->
+            <div class="destination-details">
+                <div>
+                    <h6 class="text-xs text-moon uppercase">Avg. distance</h6>
+                    <p id="destinationDistance" class="font-secondary text-sm uppercase">
+                        384,400 km
+                    </p>
+                </div>
+                <div>
+                    <h6 class="text-xs text-moon uppercase">Est. travel time</h6>
+                    <p id="destinationTravel" class="font-secondary text-sm uppercase">
+                        3 days
+                    </p>
+                </div>
+            </div>
+            <!-- End destination details -->
+        </div>
+        <!-- End destination info -->
+    </main>
+    <!-- End main content -->
+</body>
+
+</html>
