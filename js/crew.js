@@ -1,27 +1,27 @@
-const dots = document.querySelectorAll('.crew-nav-list-item');
+const dots = document.querySelectorAll(".crew-nav-list-item");
 
-const image = document.querySelector('#crewImage');
-const name = document.querySelector('#crewName');
-const bio = document.querySelector('#crewBio');
-const role = document.querySelector('#crewRole');
+const image = document.querySelector("#crewImage");
+const name = document.querySelector("#crewName");
+const bio = document.querySelector("#crewBio");
+const role = document.querySelector("#crewRole");
 
-let currentDotSelected = document.querySelector('.crew-active');
+let currentDotSelected = document.querySelector(".crew-active");
 
 // Get CREW data from local data
 
 const getCrewData = (crewName = null) => {
-    fetch('data.json')
-        .then((response) => response.json())
-        .then((data) => {
-            const crew = crewName
-            ? data.crew.find((crew) => crew.name ===crewName)
-            : data.crew[0];
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const crew = crewName
+        ? data.crew.find((crew) => crew.name === crewName)
+        : data.crew[0];
 
-            image.src = crew.images.png;
-            name.innerText= crew.name;
-            bio.innerText = crew.bio;
-            role.innerText = crew.role;
-        });
+      image.src = crew.images.png;
+      name.innerText = crew.name;
+      bio.innerText = crew.bio;
+      role.innerText = crew.role;
+    });
 };
 
 // GET CREW DATA
@@ -29,10 +29,10 @@ const getCrewData = (crewName = null) => {
 getCrewData();
 
 dots.forEach((dot) => {
-    dot.addEventListener('click', () => {
-        currentDotSelected.classList.remove('crew-active');
-        dot.classList.add('crew-active');
-        currentDotSelected = document.querySelector('.crew-active');
-        getCrewData(dot.dataset.crew);
-    });
-}); 
+  dot.addEventListener("click", () => {
+    currentDotSelected.classList.remove("crew-active");
+    dot.classList.add("crew-active");
+    currentDotSelected = document.querySelector(".crew-active");
+    getCrewData(dot.dataset.crew);
+  });
+});
