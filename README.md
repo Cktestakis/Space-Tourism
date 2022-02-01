@@ -43,4 +43,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Cktestakis](https://www.frontendmentor.io/profile/Cktestakis)
-- LinkedIn - [Cody-Ktestakis](https://www.linkedin.com/cody-ktestakis/)
+- LinkedIn - [Cody-Ktestakis](https://www.linkedin.com/in/cody-ktestakis//)
