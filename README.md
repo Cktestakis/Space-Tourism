@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Space Tourism](https://Cktesteakis.github.io/space-tourism)
+- Live Site URL: [Space Tourism](https://cktestakis.github.io/Space-Tourism/)
 
 ## My process
 
