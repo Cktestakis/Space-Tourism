@@ -25,10 +25,6 @@ Users should be able to:
 ### Screenshot
 
 
-![Speca Tourism - Homepage](/Soution-ss/home.JPG)
-![Speca Tourism - Destination](/Soution-ss/destination.JPG)
-![Speca Tourism - Crew](/Soution-ss/crew.JPG)
-![Speca Tourism - Technology](/Soution-ss/tech.JPG)
 
 ### Links
 
@@ -46,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Vadlec](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Cktestakis](https://www.frontendmentor.io/profile/Cktestakis)
 - LinkedIn - [Cody-Ktestakis](https://www.linkedin.com/cody-ktestakis/)
